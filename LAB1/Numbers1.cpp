@@ -18,9 +18,9 @@ int main(){
 	product = x*y;
 	average = sum / 2;
 	
-	cout << "Sum : \n" << sum;
-	cout << "Product : \n" << product;
-	cout << "Average : \n" << average;
+	cout << "Sum : " << sum << endl;
+	cout << "Product : " << product << endl;
+	cout << "Average : " << average << endl;
 	
 	
 	
