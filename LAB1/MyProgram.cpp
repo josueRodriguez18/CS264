@@ -1,3 +1,8 @@
+//LAB1
+//Josue Rodriguez
+//July 2nd, 2018
+
+
 #include <iostream>
 
 using namespace std;
