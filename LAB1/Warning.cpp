@@ -7,10 +7,12 @@
 using namespace std;
 
 int main(){
-	void printWarningMessage(){
-		cout "This is a warning message"
+	printWarningMessage();
+	
+	return 0;
+}
+
+void printWarningMessage(){
+	cout << "This is a warning message";
 		
-	}
-	
-	
 }
