@@ -17,7 +17,7 @@ int main(){
 	sum = x + y;
 	product = x*y;
 	average = sum / 2;
-	
+	//output for user
 	cout << "Sum : " << sum << endl;
 	cout << "Product : " << product << endl;
 	cout << "Average : " << average << endl;
