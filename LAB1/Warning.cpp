@@ -9,7 +9,11 @@ using namespace std;
 void printWarningMessage();
 
 int main(){
-	printWarningMessage();
+		for(int x = 1; i <= 7; i++){
+			printWarningMessage();
+			cout << " : " << x;
+		}
+		
 	
 	return 0;
 }
