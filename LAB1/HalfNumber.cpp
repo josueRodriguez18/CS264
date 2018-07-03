@@ -4,6 +4,7 @@
 #include <iostream>
 
 using namespace std;
+double printHalf(double inNumber);
 
 int main(){
     //number for function

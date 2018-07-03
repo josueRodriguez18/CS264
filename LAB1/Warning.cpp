@@ -5,7 +5,7 @@
 #include<iostream>
 
 using namespace std;
-
+void printWarningMessage();
 int main(){
 	printWarningMessage();
 	
