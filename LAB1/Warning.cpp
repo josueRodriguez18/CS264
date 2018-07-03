@@ -5,7 +5,9 @@
 #include<iostream>
 
 using namespace std;
+//function declaration
 void printWarningMessage();
+
 int main(){
 	printWarningMessage();
 	
@@ -14,5 +16,5 @@ int main(){
 
 void printWarningMessage(){
 	cout << "This is a warning message";
-		
+	//outputs to user	
 }
