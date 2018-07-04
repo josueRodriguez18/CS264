@@ -7,7 +7,9 @@
  
  int main(){
 	 int x, y;
+	 //prompts user for input
 	 cout << "Please enter two integers for comparison" << endl;
+	 //takes input
 	 cin >> x;
 	 cin >> y;
 	 //x bigger
@@ -18,7 +20,7 @@
 	 else if(x == y){
 		 cout << "The numbers are equal";
 	 }
-	 //less than
+	 //x less than
 	 else{
 		 cout << "The largest number is: " << y;
 	 }

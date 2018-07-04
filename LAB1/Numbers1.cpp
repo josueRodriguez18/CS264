@@ -14,10 +14,13 @@ int main(){
 	cout << "Please input two integers \n";
 	//takes input from keyboard
 	cin >> x; cin >> y;
+	//adds
 	sum = x + y;
+	//multiplies
 	product = x*y;
+	//takes the average of the numbers (although they're integers)
 	average = sum / 2;
-	
+	//output to the user
 	cout << "Sum : " << sum << endl;
 	cout << "Product : " << product << endl;
 	cout << "Average : " << average << endl;
