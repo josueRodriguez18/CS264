@@ -1,0 +1,25 @@
+a) What does the tripleMe prototype tell the compiler about this function?
+	
+	The amount of parameters, parameter type, return type and name.
+
+b) If we did not have the tripleMe prototype, what would we have to do to rearrange our code?
+	
+	Move the function definition above the main function so the compiler sees it before it is called.
+
+c) Can you identify the function definition of the tripleMe function.
+
+	The function definition is:
+		int tripleMe(int x){
+			int result = x*3;
+			return result;
+		}
+		
+d) What does the first line tell us about how the function tripleMe is used.
+
+	The first line tells us that tripleMe will return an integer and takes one integer parameter.
+	
+e) How many times was the function tripleMe called in this program
+
+	Twice.
+
+

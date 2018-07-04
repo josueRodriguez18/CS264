@@ -13,7 +13,7 @@ int main(){
     //prompts user for a number
     cout << "Please enter a number to be halved \n";
     cin >> x; //takes input
-    cout << "\n" << printHalf(x); //outputs halved number
+    cout << "\n" << printHalf(x); //calls function and outputs halved number
     return 0;
 }
 
