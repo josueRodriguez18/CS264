@@ -1,3 +1,6 @@
+/* Josue Rodriguez
+July 5th, 2018 */
+
 #include<iostream>
 
 using namespace std;
