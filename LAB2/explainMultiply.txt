@@ -1,3 +1,5 @@
+/* Josue Rodriguez
+July 5th, 2018 */
 a) What does the tripleMe prototype tell the compiler about this function?
 	
 	The amount of parameters, parameter type, return type and name.
