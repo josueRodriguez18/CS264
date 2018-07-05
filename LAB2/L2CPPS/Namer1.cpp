@@ -14,6 +14,7 @@ int main(){
 
 //loops through array and prints out all the strings
 void printAllNames(string array[], int size){
+	//loops through and outputs all the names
 	for(int i = 0; i <size; i++){
 		cout << array[i] << endl;
 	}	
