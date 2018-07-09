@@ -1,4 +1,5 @@
 /* Josue Rodriguez
+LAB2
 July 5th, 2018 */
 
 #include <iostream>
