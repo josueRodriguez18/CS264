@@ -19,7 +19,7 @@ int main(){
 		cin >> p[i];
 	}
 	
-	for(int i = 0; i < size; i++){
+	for(int i = size - 1; 0 <= i; i++){
 		
 		cout << endl << p[i];
 	}
