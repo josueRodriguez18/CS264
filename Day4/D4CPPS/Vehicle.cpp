@@ -20,6 +20,19 @@ class Vehicle {
 	
 
   int range();   // compute and return the range 
+  Vehicle(int passeng, int milesper, int cap){
+	  passengers = passeng; mpg = milesper; fuelcap = cap;
+	  
+  }
+  
+  Vehicle(){
+	  passengers = 0; mpg = 0; fuelcap = 0;
+	}
+	
+	~Vehicle(){
+		cout << " Deconstructing ";
+		
+	}
 }; 
 
 void Vehicle::setPasseng(int val){
@@ -49,17 +62,8 @@ int Vehicle::range() {
 } 
  
 int main() {  
- Vehicle sportscar;
- //setting sportscar members
- sportscar.mpg = 10; sportscar.fuelcap = 2; 
- 
- sportscar.setValue(10);
- cout << endl << sportscar.getValue();
- 
- //outputs members before the change function
- cout << " Mpg " << sportscar.mpg << " Fuelcap " << sportscar.fuelcap;
- changeVehicle(sportscar);  
- cout << " Mpg " << sportscar.mpg << " Fuelcap " << sportscar.fuelcap; 
-  
+ Vehicle sportscar(10,15,20);
+ Vehicle minivan;
+ cout << sportscar.getPasseng() << " " << minivan.getPasseng();
   return 0; 
 }
