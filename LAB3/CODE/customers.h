@@ -4,9 +4,8 @@
 using namespace std;
 
 struct customers{
-    public:
 	string name;
-    customers *next;
+    customers *next = NULL;
 
     void print_customers(customers *head);
 	customers* createList(string name);

@@ -36,6 +36,7 @@ int customers::currentLength(customers *head){
 	}
 	while(head->next != NULL){
 		counter++;
+		cout << counter;
 		head = head->next;
 	}
 	return counter;

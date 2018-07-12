@@ -12,8 +12,7 @@ void print_customers(customer &head){
 			cur = cur->next;
 		}
 }
-int main()
-{
+int main(){
 		customer customer1, customer2, customer3;
 		customer1.next = &customer2;
 		customer2.next = &customer3;
