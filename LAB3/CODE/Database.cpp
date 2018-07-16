@@ -1,26 +1,23 @@
-#include "customers.h"
+#include"customers.h"
 #include<iostream>
-
 
 using namespace std;
 
 int main(){
-	string temp;
-	cout << "This program will continue to enter customers into a linked list until the customers name is end";
-	cout << endl << "Please input the first customers's name \n";
-	cin >> temp;
-	customers *first = new customers; 
-	
-		
-	cout << endl << "Please input the first customers name \n";
-	cin >> temp;
-	while(temp != "end"){
-		first->insertName(first, temp);
-		cout << "Current length: " << first->currentLength(first) << endl;
-		cout << "Current members: "; first->print_customers(first);
-		cout << endl << "Please input the first customers name \n";
-		cin >> temp;
-	}
+    string temp;
+    customers *first = new customers;
+    cout << "Please enter the first customer \n";
+    cin >> temp;
+    first->name = temp;
+    while(temp != "end"){
+        insertName(first, temp);
+        cout << "Please enter the next customer\n";
+        cin >> temp;
+    }
+    cout << "\nNumber of customers: " << currentLength(first);
+    cout << "\nCustomers: "; printCustomers(first);
 
-	return 0;
+
+
+    return 0;
 }

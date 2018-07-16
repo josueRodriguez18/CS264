@@ -1,46 +1,35 @@
 #include<iostream>
-#include"customers.h"
+#include "customers.h"
+
 using namespace std;
 
+void insertName(customers *head, string tempName){
+    customers *temp = new customers; customers *cur = new customers;
+    temp = head; cur->name = tempName; cur->next = NULL;
 
-
-void customers::print_customers(customers *head){
-    customers *cur = head;
-        while( cur != NULL){
-            cout << cur->name << endl;
-            cur = cur->next;
-        }
-
+    while(temp->next != NULL){
+        temp = temp->next;
     }
-
-customers* customers::createList(string name){
-		customers *cur;
-		cur->name = name;
-		cur->next = NULL;
-		return cur;
-		
-	}
-void customers::insertName(customers *head, string name){
-	customers *cur;
-	cur->name = name;
-	while(head->next != NULL){
-		head = head->next;
-	}
-	head->next = cur;
-	
-}
-int customers::currentLength(customers *head){
-	int counter = 0;
-	if(head->next == NULL){
-		counter ++;
-	}
-	while(head->next != NULL){
-		counter++;
-		cout << counter;
-		head = head->next;
-	}
-	return counter;
+    temp->next = cur;
 }
 
+int currentLength(customers *head){
+    int counter; customers *temp = new customers;
+    temp = head;
+    while(temp->next != NULL){
+        counter++;
+        temp = temp->next;
+    }
+    return counter;
 
+}
 
+void printCustomers(customers *head){
+    customers *temp = head;
+    while(temp->next != NULL){
+        cout << endl << temp->name;
+        temp = temp->next;
+    }
+    cout << endl << temp->name;
+
+}

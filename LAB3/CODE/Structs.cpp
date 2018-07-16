@@ -32,7 +32,7 @@ int main(){
 		cout << endl <<p[j].Name << " " << p[j].Age << endl;
 	}
 
-
+		
 	return 0;
 
 }
