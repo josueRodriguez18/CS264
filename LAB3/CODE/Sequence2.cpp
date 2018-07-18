@@ -1,52 +1,51 @@
 #include<iostream>
+#include<stdio.h>
+#include<string.h>
 
 using namespace std;
 
+void resize();
+//void printAll(double arr[], int i);
+int currSize = 10;
+double *current = new double[currSize];
 
 
 int main(){
-	int size = 10, i = 0, in = 0;
-	
+	double in; int i = 0;
 	cout << "The program will continue taking input until -1 is read";
 	
-	double *p = new double[size];
 	
 	cout << "\n Please input your sequence elements now: ";
-	
-		do{
+	cin >> in;
+		while(in != -1){
+			if(i >= currSize){
+				resize();
+			}
+			cout << "\n Please input your sequence elements now: ";
 			cin >> in;
-			if(in != -1){
-				p[i] = in;
-				i++;
-			}
-			if( i >= size){
-				size+=2;
-				double *q = new double[size];
-				for(int j = 0; j < size-2; j++){
-					q[j] = p[j];
-				}
-				delete[] p;
-				double *p = new double[size];
-				for(int z = 0; z < size; z++){
-					p[z] = q[z];
-				}
-				delete[] q;
-				cout << " working " << endl;
-				
-			}
-			if(i%4 == 0){
-				for(int x = 0; x < size -1; x++){
-					cout << p[x] << " ";
-					
-				}
-				cout << endl;
-			}
+			current[i] = in;
+			i++;
+		}
+		
+		cout << "\n current members: ";
+		for(int j = 0; j < i; j++){
+			cout << endl << current[j]; 
+		}
 			
 			
-			
-		}while (in != -1);
+		
 
 
 	return 0;
 
+}
+
+void resize(){
+	int newSize = currSize + 10;
+	double *arr = new double[newSize];
+	memcpy( arr, current, currSize*sizeof(double) );
+	currSize = newSize;
+	delete[] current;
+	current = arr;
+	
 }
