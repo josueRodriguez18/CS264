@@ -12,13 +12,13 @@ class Rectangle{
 		
 		void setWidth(double a);
 		void setLength(double a);
-		void setColour(double a);
+		void setColour(string a);
 		
 		double getWidth();
 		double getLength();
 		string getColour();
 		
 		double calculateArea();
-		double calculatePermiter();
+		double calculatePerimeter();
 		
 };
