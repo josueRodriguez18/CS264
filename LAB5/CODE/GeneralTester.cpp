@@ -21,7 +21,17 @@ int main(){
     cout << "\nDog Category: " << d1.getCategory();
     cout << "\nDog biscuits: " << d1.getBiscuits();
 
-    Animal *p1 = new Animal[5]; p1 = &c1; 
+    Animal *p[5];
+    p[0] = new Mouse( "Rodent", "Eek");  
+    p[1] = new Tiger("Big Cat", "Roar");  
+    p[2] = new Dog("Canine", "Bark");  
+    p[3] = new Horse("Equus", "Neigh");  
+    p[4] = new Cat("Feline", "Meow"); 
+
+    for(int i = 0; i < 5; i++){
+        p[i]->describeIdentity();
+    }
+    
 
 
 
