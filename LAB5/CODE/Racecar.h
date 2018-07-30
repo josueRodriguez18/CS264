@@ -7,8 +7,8 @@ class Racecar : public Car {
     int gearBox; bool para; string sponsor;
 
     public:
-        Racecar(int g, bool p, string s, string n, string c): Car(n, c) {
-            gearBox = g; para = p;
+        Racecar(int g, bool p, string s, string n, string c, int ms, int eV): Car(n, c, ms, eV) {
+            gearBox = g; para = p; sponsor = s;
         }
         int getGear(){ return gearBox; }
         void setGear(int x){ gearBox = x;}
@@ -19,4 +19,4 @@ class Racecar : public Car {
 
 
 
-}
+};

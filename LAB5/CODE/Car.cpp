@@ -1,9 +1,7 @@
 #include<iostream>
 #include "Car.h"
 
-Car::Car(string n, string c){
-    name = n; color = c;
-}
+
 
 void Car::setMaxSpeed(int x){ maxSpeed = x;};
 int Car:: getMaxSpeed() const { return maxSpeed; };

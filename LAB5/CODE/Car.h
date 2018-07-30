@@ -1,12 +1,15 @@
 #include<iostream>
 
+
 using namespace std;
 
 class Car{ 
     
     public:
     
-        Car( string n, string c );
+        Car( string n, string c, int ms, int eV ){
+            name = n; color = c; maxSpeed = ms; engineValves = eV;
+        }
         void setMaxSpeed( int x);
         int getMaxSpeed() const;
 
