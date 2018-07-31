@@ -6,6 +6,8 @@
 *.exe
 *.o
 *.so
+*.h.gch
+*.gch
 
 # Packages #
 ############
@@ -28,6 +30,7 @@
 
 # OS generated files #
 ######################
+*.stackdump
 .DS_Store
 .DS_Store?
 ._*
