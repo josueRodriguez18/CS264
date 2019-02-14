@@ -1,3 +1,4 @@
+
 %part 1.a
 syms t;
 syms f;
@@ -18,5 +19,19 @@ ilaplace(f)
 f = (s^2+2*s+2)/(s+4);
 ilaplace(f)
 %3.a
-f = (s+4)/(s^3+4*s^2+s);
-[r,p,k] = residue((s+4),(s^3+4*s^2+s))
+num = [1 4];
+den = [1 4 1 0];
+h = tf(num, den)
+[B, A] = residue( num, den )
+%3.b
+num = [1 2 2];
+den = [1 4];
+h = tf(num, den)
+[C, B, A] = residue(num,den)
+%3.c
+num = [1 0];
+den = [1 4 6 4];
+h = tf(num, den)
+[C, B] = residue(num, den)
+f= s/((s+2)*(s^2+2*s+2))
+ilaplace(f)
